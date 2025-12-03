@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Disallow admin or sensitive paths (if any exist)
+# Disallow: /admin/
+# Disallow: /cart/
+# Disallow: /checkout/
+
+# Specify sitemap location
+Sitemap: https://thedhemhicloset.com.ng/sitemap.xml
