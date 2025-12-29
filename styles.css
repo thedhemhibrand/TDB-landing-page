@@ -189,11 +189,11 @@ header.header-scrolled {
     transform: scale(1.1) rotate(-5deg);
 }
 
-/* Futuristic Navigation */
+/* Futuristic Navigation — Compact Version */
 .nav-menu {
     display: flex;
     list-style: none;
-    gap: 40px;
+    gap: 28px; /* Reduced from 40px → cleaner spacing */
 }
 
 .nav-item {
@@ -206,8 +206,8 @@ header.header-scrolled {
     text-decoration: none;
     transition: var(--transition);
     position: relative;
-    padding: 8px 0;
-    font-size: 1.1rem;
+    padding: 6px 0; /* Reduced from 8px → tighter vertical rhythm */
+    font-size: 1rem; /* Reduced from 1.1rem → standard readable size */
 }
 
 .nav-link::before {
@@ -216,7 +216,7 @@ header.header-scrolled {
     bottom: 0;
     left: 0;
     width: 0;
-    height: 2px;
+    height: 1.5px; /* Reduced from 2px → lighter underline */
     background: linear-gradient(90deg, var(--royal-purple), var(--soft-purple));
     transition: width 0.3s ease;
 }
@@ -236,7 +236,7 @@ header.header-scrolled {
     left: 50%;
     width: 0;
     height: 0;
-    background: radial-gradient(circle, rgba(94, 0, 108, 0.1) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(94, 0, 108, 0.07) 0%, transparent 70%); /* Lighter glow (0.1 → 0.07) */
     transform: translate(-50%, -50%);
     transition: width 0.3s ease, height 0.3s ease;
     border-radius: var(--radius-full);
@@ -244,37 +244,37 @@ header.header-scrolled {
 }
 
 .nav-link:hover::after {
-    width: 120%;
-    height: 120%;
+    width: 110%; /* Slightly reduced from 120% → more subtle pulse */
+    height: 110%;
 }
 
-/* Animated Hamburger */
+/* Animated Hamburger — slightly refined */
 .hamburger {
     display: none;
     cursor: pointer;
     background: none;
     border: none;
-    width: 40px;
-    height: 40px;
+    width: 36px; /* Reduced from 40px */
+    height: 36px; /* Reduced from 40px */
     position: relative;
     z-index: 1001;
 }
 
 .hamburger-line {
     position: absolute;
-    width: 30px;
-    height: 2px;
+    width: 26px; /* Reduced from 30px */
+    height: 1.5px; /* Reduced from 2px */
     background: var(--royal-purple);
     left: 5px;
     transition: var(--transition);
 }
 
-.hamburger-line:nth-child(1) { top: 12px; }
-.hamburger-line:nth-child(2) { top: 19px; }
-.hamburger-line:nth-child(3) { top: 26px; }
+.hamburger-line:nth-child(1) { top: 11px; } /* Adjusted for smaller size */
+.hamburger-line:nth-child(2) { top: 17.5px; }
+.hamburger-line:nth-child(3) { top: 24px; }
 
 .hamburger.active .hamburger-line:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
+    transform: rotate(45deg) translate(4px, 4px); /* Slightly tighter transform */
 }
 
 .hamburger.active .hamburger-line:nth-child(2) {
@@ -282,17 +282,16 @@ header.header-scrolled {
 }
 
 .hamburger.active .hamburger-line:nth-child(3) {
-    transform: rotate(-45deg) translate(7px, -6px);
+    transform: rotate(-45deg) translate(6px, -5px);
 }
-
 /* ==========================================================================
-   HERO SECTION - SUPER PREMIUM ANIMATIONS
+   HERO SECTION - OPTIMIZED SIZE WITH PREMIUM ANIMATIONS
    ========================================================================== */
 .hero {
-    padding: 200px 0 150px;
+    padding: 120px 0 80px; /* Reduced from 200px 0 150px */
     position: relative;
     overflow: hidden;
-    min-height: 100vh;
+    min-height: 85vh; /* Reduced from 100vh */
     display: flex;
     align-items: center;
 }
@@ -313,7 +312,7 @@ header.header-scrolled {
 .hero-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 80px;
+    gap: 60px; /* Reduced from 80px */
     align-items: center;
     position: relative;
 }
@@ -321,7 +320,7 @@ header.header-scrolled {
 .hero-text {
     opacity: 0;
     transform: translateY(30px);
-    animation: fadeInUp 1s ease 0.3s forwards;
+    animation: fadeInUp 0.8s ease 0.2s forwards; /* Slightly faster animation */
 }
 
 @keyframes fadeInUp {
@@ -332,30 +331,30 @@ header.header-scrolled {
 }
 
 .hero-headline {
-    font-size: 4rem;
-    margin-bottom: 1.5rem;
+    font-size: 3rem; /* Reduced from 4rem */
+    margin-bottom: 1.2rem; /* Reduced from 1.5rem */
     color: var(--royal-purple);
-    line-height: 1.1;
+    line-height: 1.15; /* Slightly tighter */
     position: relative;
 }
 
 .hero-headline::after {
     content: '';
     position: absolute;
-    bottom: -10px;
+    bottom: -8px; /* Reduced from -10px */
     left: 0;
-    width: 80px;
-    height: 4px;
+    width: 60px; /* Reduced from 80px */
+    height: 3px; /* Reduced from 4px */
     background: linear-gradient(90deg, var(--royal-purple), var(--soft-purple));
     border-radius: 2px;
 }
 
 .hero-subheadline {
-    font-size: 1.4rem;
-    margin-bottom: 2rem;
+    font-size: 1.2rem; /* Reduced from 1.4rem */
+    margin-bottom: 1.5rem; /* Reduced from 2rem */
     color: var(--dark-gray);
     font-weight: 400;
-    max-width: 600px;
+    max-width: 500px; /* Reduced from 600px */
 }
 
 .microline {
